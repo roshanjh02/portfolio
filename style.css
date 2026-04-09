@@ -1,0 +1,59 @@
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+body { font-family: 'Poppins', sans-serif; background: #fff; color: #333; overflow-x: hidden; }
+
+.container { width: 90%; max-width: 1200px; margin: auto; padding: 0 20px; }
+
+header {
+    height: 100vh;
+    background: #121212; /* Sleek dark background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img img {
+    width: 140px; height: 140px;
+    border-radius: 50%; /* Perfect circle */
+    border: 4px solid #00d2ff;
+    margin-bottom: 25px;
+    object-fit: cover; /* Ensures image isn't distorted */
+}
+.highlight { color: #00d2ff; }
+
+.hero-btns { margin-top: 30px; }
+.btn-main, .btn-sub {
+    padding: 14px 28px; text-decoration: none; border-radius: 5px; font-weight: 600; margin: 8px; display: inline-block;
+    transition: all 0.3s ease;
+}
+.btn-main { background: #00d2ff; color: #fff; }
+.btn-main:hover { background: #008fcc; }
+.btn-sub { border: 2px solid #00d2ff; color: #00d2ff; }
+.btn-sub:hover { background: #00d2ff; color: #fff; }
+
+.section { padding: 90px 0; text-align: center; }
+.section h2 { font-size: 2.5rem; margin-bottom: 50px; }
+.gray { background: #f9f9f9; }
+
+.skill-container {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;
+}
+
+.skill-card {
+    background: white; padding: 40px 25px; width: 320px; border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06); transition: all 0.3s ease; cursor: pointer;
+}
+.skill-card:hover { transform: translateY(-10px); background: #00d2ff; color: white; }
+.skill-card i { font-size: 3rem; color: #00d2ff; margin-bottom: 20px; transition: all 0.3s ease; }
+.skill-card:hover i { color: white; }
+
+.contact-text { font-size: 1.1rem; margin-bottom: 30px; }
+.social-links { margin-bottom: 30px; }
+.social-icon { margin: 15px; text-decoration: none; color: #121212; font-weight: 600; font-size: 1.1rem; padding-bottom: 5px; border-bottom: 2px solid #00d2ff; transition: 0.2s; }
+.social-icon:hover { color: #00d2ff; border-bottom: 2px solid transparent; }
+.email { font-size: 1.1rem; margin-top: 20px; }
+.email a { text-decoration: none; color: #333; font-weight: 600; }
+.email a:hover { color: #00d2ff; }
+
+footer { padding: 40px; background: #121212; color: #888; font-size: 0.95rem; }
