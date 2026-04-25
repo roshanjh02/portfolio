@@ -26,3 +26,10 @@ window.recordClick = function(name) {
         alert("Data sent! Ab Firebase Data tab check karo.");
     });
 }
+// Ye code buttons ko click hote hi database se connect karega
+document.querySelectorAll('.skill-card').forEach(card => {
+    card.addEventListener('click', () => {
+        const skillName = card.querySelector('h3').innerText;
+        window.recordClick(skillName);
+    });
+});
